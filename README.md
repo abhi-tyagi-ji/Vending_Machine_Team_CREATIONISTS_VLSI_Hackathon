@@ -74,10 +74,10 @@ endmodule
 //`timescale 1ns/1ps
  module tb_creationists;
 
-  reg clk=0, rst;
-    reg [1:0] select;
-    reg [7:0] coin;
-    reg insert_coin;
+  reg clk=0, rst=0;
+    reg [1:0] select=2'b00;
+    reg [7:0] coin=0;
+    reg insert_coin=0;
     reg [7:0] p0=10, p1=15, p2=20;
     wire dispense;
     wire [7:0] change;
